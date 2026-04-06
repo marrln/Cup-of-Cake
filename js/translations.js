@@ -3,7 +3,7 @@ const translations = {
   el: {
     // Navigation
     "nav-home": "Αρχική",
-    "nav-menu": "Μενού",
+    "nav-menu": "Κατάλογος",
     "nav-about": "Σχετικά",
     "nav-lang-el": "Ελληνικά",
     "nav-lang-en": "English",
@@ -35,7 +35,7 @@ const translations = {
     "feat3-desc": "Κρεμώδες cheesecake με σάλτσα βατόμουρου",
     "feat4-name": "Pancakes Maple",
     "feat4-desc": "Αφράτα pancakes με σιρόπι σφενδάμου",
-    "view-menu-btn": "Δείτε το Μενού",
+    "view-menu-btn": "Δείτε το Κατάλογος",
 
     // Footer
     "footer-hours-title": "Ωράριο Λειτουργίας",
@@ -48,7 +48,7 @@ const translations = {
     "footer-map-title": "Βρείτε μας εδώ",
 
     // Menu page
-    "menu-page-title": "Το Μενού μας",
+    "menu-page-title": "Το Κατάλογος μας",
     "menu-page-subtitle": "Ανακαλύψτε τις γεύσεις μας",
 
     // Menu categories
