@@ -41,6 +41,14 @@
       color: var(--text-light);
       text-decoration: none;
       letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-logo img {
+      height: 2rem;
+      width: auto;
     }
 
     .nav-logo span { color: var(--pale-2); }
@@ -286,7 +294,7 @@
   <nav id="navbar">
     <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
       <!-- Logo -->
-      <a href="index.html" class="nav-logo"> Cup of <span>Cake</span></a>
+      <a href="index.html" class="nav-logo"><img src="assets/logo.jpg" alt="Cup of Cake logo"> Cup of <span>Cake</span></a>
 
       <!-- Desktop nav links -->
       <div class="hidden md:flex items-center gap-1">
