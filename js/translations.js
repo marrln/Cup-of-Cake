@@ -19,7 +19,7 @@ const translations = {
     "slide4-desc": "Σπιτικά γλυκά φτιαγμένα με αγάπη",
     "slide5-title": "Brunch Απολαύσεις",
     "slide5-desc": "Το τέλειο brunch για να ξεκινήσετε την ημέρα σας",
-    "carousel-btn-order": "Παραγγείλτε Τώρα",
+    "carousel-btn-order": "Παραγγείλτε Εδώ",
 
     // Index – Intro section
     "intro-title": "Καλώς ήρθατε στο Cup of Cake",
@@ -35,7 +35,7 @@ const translations = {
     "feat3-desc": "Κρεμώδες cheesecake με σάλτσα βατόμουρου",
     "feat4-name": "Pancakes Maple",
     "feat4-desc": "Αφράτα pancakes με σιρόπι σφενδάμου",
-    "view-menu-btn": "Δείτε το Κατάλογος",
+    "view-menu-btn": "Δείτε όλο το menu μας",
 
     // Footer
     "footer-hours-title": "Ωράριο Λειτουργίας",
