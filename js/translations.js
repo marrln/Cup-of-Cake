@@ -10,7 +10,7 @@ const translations = {
 
     // Index – Hero / Carousel
     "slide1-title": "Φρέσκος Καφές",
-    "slide1-desc": "Αρωματικός καφές από επιλεγμένα κόκκινα μούρα",
+    "slide1-desc": "Αρωματικός καφές από επιλεγμένους κόκκους",
     "slide2-title": "Βάφλες με Σοκολάτα",
     "slide2-desc": "Τραγανές βάφλες με ζεστή σοκολάτα και παγωτό βανίλια",
     "slide3-title": "Ροφήματα Εποχής",
@@ -173,7 +173,7 @@ const translations = {
 
     // Index – Hero / Carousel
     "slide1-title": "Fresh Coffee",
-    "slide1-desc": "Aromatic coffee from selected red berries",
+    "slide1-desc": "Aromatic coffee from selected beans",
     "slide2-title": "Chocolate Waffles",
     "slide2-desc": "Crispy waffles with hot chocolate and vanilla ice cream",
     "slide3-title": "Seasonal Drinks",
