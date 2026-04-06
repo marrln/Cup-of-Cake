@@ -10,40 +10,16 @@
 </head>
 <body>
 
-  <!-- ══════════ NAVBAR ══════════ -->
-  <nav id="navbar">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.jpg" alt="Cup of Cake logo"> Cup of <span>Cake</span></a>
-      <div class="hidden md:flex items-center gap-1">
-        <a href="index.html" class="nav-link" data-i18n="nav-home">Αρχική</a>
-        <a href="menu.html" class="nav-link active" data-i18n="nav-menu">Κατάλογος</a>
-        <a href="about_us.html" class="nav-link" data-i18n="nav-about">Σχετικά</a>
-      </div>
-      <div class="flex items-center gap-2">
-        <button class="lang-btn lang-active" data-lang="el">GR ΕΛ</button>
-        <button class="lang-btn" data-lang="en">US EN</button>
-        <button id="nav-toggle" class="text-white ml-2 text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
-          <i class="fa fa-bars"></i>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu">
-      <a href="index.html" class="nav-link" data-i18n="nav-home">Αρχική</a>
-      <a href="menu.html" class="nav-link" data-i18n="nav-menu">Κατάλογος</a>
-      <a href="about_us.html" class="nav-link" data-i18n="nav-about">Σχετικά</a>
-    </div>
-  </nav>
-
-  <!-- ══════════ HERO ══════════ -->
+  <!-- Hero -->
   <div class="menu-hero">
     <h1 class="text-4xl font-extrabold mb-2" data-i18n="menu-page-title">Το menu μας</h1>
     <p class="text-lg opacity-85" data-i18n="menu-page-subtitle">Ανακαλύψτε τις γεύσεις μας</p>
   </div>
 
-  <!-- ══════════ MENU CONTENT ══════════ -->
+  <!-- Menu Items -->
   <main class="max-w-7xl mx-auto px-4 py-12 space-y-16">
 
-    <!-- ── Brunch ─────────────────────────────────── -->
+    <!-- Brunch -->
     <section id="brunch">
       <span class="cat-badge"><span data-i18n="cat-brunch">Brunch</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -75,7 +51,7 @@
       </div>
     </section>
 
-    <!-- ── Βάφλες ──────────────────────────────────── -->
+    <!-- Waffles -->
     <section id="waffles">
       <span class="cat-badge"><span data-i18n="cat-waffles">Βάφλες</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,7 +83,7 @@
       </div>
     </section>
 
-    <!-- ── Pancakes ─────────────────────────────────── -->
+    <!-- Pancakes -->
     <section id="pancakes">
       <span class="cat-badge"><span data-i18n="cat-pancakes">Pancakes Γλυκά</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -144,7 +120,7 @@
       </div>
     </section>
 
-    <!-- ── Γλυκά ────────────────────────────────────── -->
+    <!-- Sweets -->
     <section id="sweets">
       <span class="cat-badge"><span data-i18n="cat-sweets">Γλυκά</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -216,7 +192,7 @@
       </div>
     </section>
 
-    <!-- ── Sandwiches ───────────────────────────────── -->
+    <!-- Sandwiches -->
     <section id="sandwiches">
       <span class="cat-badge"><span data-i18n="cat-sandwiches">Sandwiches</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -238,7 +214,7 @@
       </div>
     </section>
 
-    <!-- ── Σφολιάτες ────────────────────────────────── -->
+    <!-- Sfoliates -->
     <section id="sfolies">
       <span class="cat-badge"><span data-i18n="cat-sfolies">Σφολιάτες</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -270,7 +246,7 @@
       </div>
     </section>
 
-    <!-- ── Snacks ────────────────────────────────────── -->
+    <!-- Snacks -->
     <section id="snacks">
       <span class="cat-badge"><span data-i18n="cat-snacks">Snacks</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -297,7 +273,7 @@
       </div>
     </section>
 
-    <!-- ── Καφέδες ──────────────────────────────────── -->
+    <!-- Coffees -->
     <section id="coffees">
       <span class="cat-badge"><span data-i18n="cat-coffees">Καφέδες</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -369,7 +345,7 @@
       </div>
     </section>
 
-    <!-- ── Ροφήματα ──────────────────────────────────── -->
+    <!-- Drinks -->
     <section id="drinks">
       <span class="cat-badge"><span data-i18n="cat-drinks">Ροφήματα</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -441,7 +417,7 @@
       </div>
     </section>
 
-    <!-- ── Αναψυκτικά ─────────────────────────────── -->
+    <!-- Soft Drinks -->
     <section id="soft">
       <span class="cat-badge"><span data-i18n="cat-soft">Αναψυκτικά</span></span>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -520,7 +496,7 @@
 
   </main>
 
-  <!-- ══════════ MAP ══════════ -->
+  <!-- Map Embed -->
   <section id="map-section" class="py-12 px-6">
     <div class="max-w-5xl mx-auto">
       <h2 class="text-2xl font-extrabold text-center mb-8" style="color:var(--primary-dark)" data-i18n="footer-map-title">Βρείτε μας εδώ</h2>
@@ -537,42 +513,7 @@
     </div>
   </section>
 
-  <!-- ══════════ FOOTER ══════════ -->
-  <footer class="pt-12 pb-6 px-6">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-      <!-- Brand -->
-      <div>
-        <div class="text-2xl font-bold mb-3"> Cup of Cake</div>
-        <p class="text-sm opacity-80" data-i18n="footer-address">Μωρογιάννη 83 & Ηρακλέους, Περιστέρι 12133, Αθήνα</p>
-        <p class="text-sm opacity-80 mt-1" data-i18n="footer-phone">Τηλ.: +30  210 574 7222</p>
-        <div class="flex mt-4">
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.e-food.gr/delivery/peristeri/cup-of-cake-8827353" class="social-icon"><img src="assets/efood_icon.png" alt="efood" style="height: 1.4rem; width: 1.4rem; object-fit: contain;"></a>
-          <a href="#" class="social-icon"><img src="assets/box_icon.png" alt="box" style="height: 1.4rem; width: 1.4rem; object-fit: contain;"></a>
-        </div>
-      </div>
-      <!-- Hours -->
-      <div>
-        <h3 class="font-bold text-lg mb-3" data-i18n="footer-hours-title">Ωράριο Λειτουργίας</h3>
-        <p class="text-sm opacity-80" data-i18n="footer-hours-weekdays">Δευτέρα - Παρασκευή: 08:00 - 22:00</p>
-        <p class="text-sm opacity-80 mt-1" data-i18n="footer-hours-saturday">Σάββατο: 09:00 - 23:00</p>
-        <p class="text-sm opacity-80 mt-1" data-i18n="footer-hours-sunday">Κυριακή: 10:00 - 21:00</p>
-      </div>
-      <!-- Nav links -->
-      <div>
-        <h3 class="font-bold text-lg mb-3">Links</h3>
-        <div class="flex flex-col gap-1">
-          <a href="index.html" data-i18n="nav-home">Αρχική</a>
-          <a href="menu.html" data-i18n="nav-menu">Κατάλογος</a>
-          <a href="about_us.html" data-i18n="nav-about">Σχετικά</a>
-        </div>
-      </div>
-    </div>
-    <div class="max-w-7xl mx-auto border-t border-white/20 mt-8 pt-4 text-center text-sm opacity-70">
-      <span data-i18n="footer-copy">© 2025 Cup of Cake. All rights reserved.</span>
-    </div>
-  </footer>
-
   <script src="js/translations.js"></script>
+  <script src="js/load-components.js"></script>
 </body>
 </html>

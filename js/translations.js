@@ -29,12 +29,12 @@ const translations = {
   "featured-title": "Our Favourites",
   "feat1-name": "Freddo Espresso",
   "feat1-desc": "Iced coffee for summer days",
-  "feat2-name": "Nutella Waffle",
-  "feat2-desc": "Crispy waffle with Nutella and banana",
-  "feat3-name": "Raspberry Cheesecake",
-  "feat3-desc": "Creamy cheesecake with raspberry sauce",
-  "feat4-name": "Maple Pancakes",
-  "feat4-desc": "Fluffy pancakes with maple syrup",
+  "feat2-name": "Profiterole Pancakes",
+  "feat2-desc": "3 pieces. With dark chocolate profiterole sauce, whipped cream & vanilla",
+  "feat3-name": "Red Velvet",
+  "feat3-desc": "With cream cheese buttercream & homemade strawberry jam",
+  "feat4-name": "Banoffee Waffles",
+  "feat4-desc": "With Bavarian cream, caramel spread, banana, caramel syrup & crushed butter biscuit",
   "view-menu-btn": "View our full menu",
 
   // Footer
@@ -337,7 +337,13 @@ function initI18n() {
     });
   }
 
-  // Set up language switch buttons
+  // Setup language button listeners (called after navbar is loaded)
+  setupLangButtonListeners();
+}
+
+// Setup language button event listeners
+// This is called separately from initI18n so it can be called after navbar is injected
+function setupLangButtonListeners() {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const lang = btn.dataset.lang;
