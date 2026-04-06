@@ -1,360 +1,359 @@
-// Cup of Cake – Bilingual translations (Greek / English)
+// Cup of Cake - English translations only
+// Greek is the default language stored in HTML as data-i18n attribute text content
+// When language switches to English, only these translations are applied
+
 const translations = {
-  el: {
-    // Navigation
-    "nav-home": "Αρχική",
-    "nav-menu": "Κατάλογος",
-    "nav-about": "Σχετικά",
-    "nav-lang-el": "Ελληνικά",
-    "nav-lang-en": "English",
+  // Navigation
+  "nav-home": "Home",
+  "nav-menu": "Menu",
+  "nav-about": "About Us",
 
-    // Index – Hero / Carousel
-    "slide1-title": "Φρέσκος Καφές",
-    "slide1-desc": "Αρωματικός καφές από επιλεγμένους κόκκους",
-    "slide2-title": "Βάφλες με Σοκολάτα",
-    "slide2-desc": "Τραγανές βάφλες με ζεστή σοκολάτα και παγωτό βανίλια",
-    "slide3-title": "Ροφήματα Εποχής",
-    "slide3-desc": "Ζεστά και κρύα ροφήματα για κάθε εποχή",
-    "slide4-title": "Γλυκά & Pastry",
-    "slide4-desc": "Σπιτικά γλυκά φτιαγμένα με αγάπη",
-    "slide5-title": "Brunch Απολαύσεις",
-    "slide5-desc": "Το τέλειο brunch για να ξεκινήσετε την ημέρα σας",
-    "carousel-btn-order": "Παραγγείλτε Εδώ",
+  // Index - Hero / Carousel
+  "slide1-title": "Fresh Coffee",
+  "slide1-desc": "Aromatic coffee from selected beans",
+  "slide2-title": "Chocolate Waffles",
+  "slide2-desc": "Crispy waffles with hot chocolate and vanilla ice cream",
+  "slide3-title": "Seasonal Drinks",
+  "slide3-desc": "Hot and cold beverages for every season",
+  "slide4-title": "Sweets & Pastry",
+  "slide4-desc": "Homemade sweets made with love",
+  "slide5-title": "Brunch Delights",
+  "slide5-desc": "The perfect brunch to start your day",
+  "carousel-btn-order": "Order Now",
 
-    // Index – Intro section
-    "intro-title": "Καλώς ήρθατε στο Cup of Cake",
-    "intro-text": "Στο Cup of Cake πιστεύουμε ότι κάθε στιγμή αξίζει μια γλυκιά ανταμοιβή. Από τον πρωινό καφέ μέχρι το βραδινό επιδόρπιο, σας προσφέρουμε την καλύτερη εμπειρία γεύσης στην Αθήνα.",
+  // Index - Intro section
+  "intro-title": "Welcome to Cup of Cake",
+  "intro-text": "At Cup of Cake we believe every moment deserves a sweet reward. From the morning coffee to the evening dessert, we offer you the best taste experience in Athens.",
 
-    // Index – Featured section
-    "featured-title": "Αγαπημένες Επιλογές",
-    "feat1-name": "Freddo Espresso",
-    "feat1-desc": "Παγωμένος καφές για καλοκαιρινές μέρες",
-    "feat2-name": "Βάφλα Nutella",
-    "feat2-desc": "Τραγανή βάφλα με Nutella και μπανάνα",
-    "feat3-name": "Cheesecake Βατόμουρο",
-    "feat3-desc": "Κρεμώδες cheesecake με σάλτσα βατόμουρου",
-    "feat4-name": "Pancakes Maple",
-    "feat4-desc": "Αφράτα pancakes με σιρόπι σφενδάμου",
-    "view-menu-btn": "Δείτε όλο το menu μας",
+  // Index - Featured section
+  "featured-title": "Our Favourites",
+  "feat1-name": "Freddo Espresso",
+  "feat1-desc": "Iced coffee for summer days",
+  "feat2-name": "Nutella Waffle",
+  "feat2-desc": "Crispy waffle with Nutella and banana",
+  "feat3-name": "Raspberry Cheesecake",
+  "feat3-desc": "Creamy cheesecake with raspberry sauce",
+  "feat4-name": "Maple Pancakes",
+  "feat4-desc": "Fluffy pancakes with maple syrup",
+  "view-menu-btn": "View our full menu",
 
-    // Footer
-    "footer-hours-title": "Ωράριο Λειτουργίας",
-    "footer-hours-weekdays": "Δευτέρα – Παρασκευή: 07:00-20:00",
-    "footer-hours-saturday": "Σάββατο: 08:00-20:00",
-    "footer-hours-sunday": "Κυριακή: 09:30-17:00",
-    "footer-address": "Μωρογιάννη 83 & Ηρακλέους, Περιστέρι 12133, Αθήνα",
-    "footer-phone": "Τηλ.: +30  210 574 7222",
-    "footer-copy": "© 2025 Cup of Cake. Με επιφύλαξη παντός δικαιώματος.",
-    "footer-map-title": "Βρείτε μας εδώ",
+  // Footer
+  "footer-hours-title": "Opening Hours",
+  "footer-hours-weekdays": "Monday - Friday: 07:00-20:00",
+  "footer-hours-saturday": "Saturday: 08:00-20:00",
+  "footer-hours-sunday": "Sunday: 09:30-17:00",
+  "footer-address": "Morigianni 83 & Irakleous, Peristeri 12133, Athens",
+  "footer-phone": "Tel.: +30 210 574 7222",
+  "footer-copy": "© 2025 Cup of Cake. All rights reserved.",
+  "footer-map-title": "Find us here",
 
-    // Menu page
-    "menu-page-title": "Το menu μας",
-    "menu-page-subtitle": "Ανακαλύψτε τις γεύσεις μας",
+  // Menu page
+  "menu-page-title": "Our Menu",
+  "menu-page-subtitle": "Discover our flavours",
 
-    // Menu categories
-    "cat-brunch": "Brunch",
-    "cat-waffles": "Βάφλες",
-    "cat-pancakes": "Pancakes Γλυκά",
-    "cat-sweets": "Γλυκά",
-    "cat-sandwiches": "Sandwiches",
-    "cat-sfolies": "Σφολιάτες",
-    "cat-snacks": "Snacks",
-    "cat-coffees": "Καφέδες",
-    "cat-drinks": "Ροφήματα",
-    "cat-soft": "Αναψυκτικά",
+  // Menu categories
+  "cat-brunch": "Brunch",
+  "cat-waffles": "Waffles",
+  "cat-pancakes": "Sweet Pancakes",
+  "cat-sweets": "Sweets",
+  "cat-sandwiches": "Sandwiches",
+  "cat-sfolies": "Pastries",
+  "cat-snacks": "Snacks",
+  "cat-coffees": "Coffees",
+  "cat-drinks": "Drinks",
+  "cat-soft": "Soft Drinks",
 
-    // Brunch items
-    "brunch1-name": "Αβοκάντο Toast",
-    "brunch1-desc": "Τοστ με αβοκάντο, αυγό ποσέ και ντοματίνια",
-    "brunch2-name": "English Breakfast",
-    "brunch2-desc": "Αυγά, μπέικον, λουκάνικο, φασόλια, ψωμί",
-    "brunch3-name": "Granola Bowl",
-    "brunch3-desc": "Granola με γιαούρτι, μέλι και φρέσκα φρούτα",
+  // Brunch items
+  "brunch-1-name": "Turkey Omelette",
+  "brunch-1-desc": "With 3 eggs, turkey, grated gouda & cherry tomatoes. Served with 1 slice of toasted bread & salad (iceberg, radicchio, lola lettuce, vinaigrette, parmesan & cherry tomatoes)",
+  "brunch-2-name": "Classic Pancakes (Savory)",
+  "brunch-2-desc": "3 pieces. With cream cheese, turkey, gouda, cherry tomatoes & lettuce. Served with salad",
+  "brunch-3-name": "Special Pancakes (Savory)",
+  "brunch-3-desc": "3 pieces. With cream cheese, chicken, gouda, cherry tomatoes, bacon & fried egg. Served with salad",
+  "brunch-4-name": "Croque Monsieur",
+  "brunch-4-desc": "With double smoked turkey, double gouda & béchamel. Served with salad",
+  "brunch-5-name": "Croque Madame",
+  "brunch-5-desc": "With double smoked turkey, double gouda, béchamel & fried egg. Served with salad",
 
-    // Waffle items
-    "waffle1-name": "Βάφλα Classic",
-    "waffle1-desc": "Βάφλα με βούτυρο, μέλι και ζάχαρη άχνη",
-    "waffle2-name": "Βάφλα Nutella & Μπανάνα",
-    "waffle2-desc": "Βάφλα με Nutella, μπανάνα και τριμμένη φουντούκια",
-    "waffle3-name": "Βάφλα Φράουλα",
-    "waffle3-desc": "Βάφλα με σαντιγί και φράουλες",
+  // Waffles items
+  "waffles-1-name": "Choco Waffle",
+  "waffles-1-desc": "With hazelnut spread & chopped hazelnuts",
+  "waffles-2-name": "Speculoos Waffle",
+  "waffles-2-desc": "With Speculoos spread & crushed Speculoos biscuit",
+  "waffles-3-name": "Forest Waffle",
+  "waffles-3-desc": "With Bavarian cream & homemade red fruit jam",
+  "waffles-4-name": "Profiterole Waffle",
+  "waffles-4-desc": "With dark chocolate profiterole sauce, whipped cream & vanilla",
+  "waffles-5-name": "Banoffee Waffle",
+  "waffles-5-desc": "With Bavarian cream, caramel spread, banana, caramel syrup & crushed butter biscuit",
 
-    // Pancakes items
-    "pancake1-name": "Pancakes Maple Syrup",
-    "pancake1-desc": "Αφράτα pancakes με σιρόπι σφενδάμου και βούτυρο",
-    "pancake2-name": "Pancakes Nutella",
-    "pancake2-desc": "Pancakes με Nutella και crushed Oreo",
-    "pancake3-name": "Pancakes Φρούτα",
-    "pancake3-desc": "Pancakes με ανάμεικτα φρέσκα φρούτα",
+  // Pancakes items
+  "pancakes-1-name": "Cinnamon Pancakes",
+  "pancakes-1-desc": "3 pieces. With honey, cinnamon & walnuts",
+  "pancakes-2-name": "Choco Pancakes",
+  "pancakes-2-desc": "3 pieces. With hazelnut spread & chopped hazelnuts",
+  "pancakes-3-name": "Speculoos Pancakes",
+  "pancakes-3-desc": "3 pieces. With Speculoos spread & crushed biscuit",
+  "pancakes-4-name": "Forest Pancakes",
+  "pancakes-4-desc": "3 pieces. With Bavarian cream & homemade red fruit jam",
+  "pancakes-5-name": "Profiterole Pancakes",
+  "pancakes-5-desc": "3 pieces. With dark chocolate profiterole sauce, whipped cream & vanilla",
+  "pancakes-6-name": "Banoffee Pancakes",
+  "pancakes-6-desc": "3 pieces. With Bavarian cream, caramel spread, banana, caramel syrup & crushed biscuit",
 
-    // Sweets items
-    "sweet1-name": "Cheesecake New York",
-    "sweet1-desc": "Κλασικό cheesecake με κουλουράκι Graham",
-    "sweet2-name": "Brownie Σοκολάτα",
-    "sweet2-desc": "Ζεστό brownie με παγωτό βανίλια",
-    "sweet3-name": "Tiramisu",
-    "sweet3-desc": "Ιταλικό tiramisu με μασκαρπόνε και καφέ",
+  // Sweets items
+  "sweets-1-name": "Cheesecake",
+  "sweets-1-desc": "Delicious, light and classic dessert for every season",
+  "sweets-2-name": "Tiramisu",
+  "sweets-2-desc": "Sweet delight",
+  "sweets-3-name": "Profiterole (Individual)",
+  "sweets-3-desc": "With dark chocolate sauce, whipped cream & vanilla",
+  "sweets-4-name": "Carrot Cake (Slice)",
+  "sweets-4-desc": "With cream cheese buttercream & chopped walnuts",
+  "sweets-5-name": "Red Velvet Cake (Slice)",
+  "sweets-5-desc": "With cream cheese buttercream & homemade strawberry jam",
+  "sweets-6-name": "Ekmek (Traditional Dessert)",
+  "sweets-6-desc": "With Constantinople-style brioche",
+  "sweets-7-name": "Apple Tart",
+  "sweets-7-desc": "Traditional apple pie with vanilla cream & whole apple pieces",
+  "sweets-8-name": "Walnut Cake (Karidopita)",
+  "sweets-8-desc": "With vanilla cream",
+  "sweets-9-name": "Lemon Cheesecake",
+  "sweets-9-desc": "With homemade lemon cream",
+  "sweets-10-name": "Coffee Lotus Dessert",
+  "sweets-10-desc": "With cream cheese, single espresso shot & Lotus biscuit",
+  "sweets-11-name": "Millefeuille",
+  "sweets-11-desc": "Sweet delight",
+  "sweets-12-name": "Galaktoboureko",
+  "sweets-12-desc": "Sweet delight (custard pie with syrup)",
+  "sweets-13-name": "Galaktoboureko Kataifi (Individual)",
+  "sweets-13-desc": "Sweet delight",
 
-    // Sandwiches items
-    "sandwich1-name": "Club Sandwich",
-    "sandwich1-desc": "Τριώροφο sandwich με κοτόπουλο, μπέικον και λαχανικά",
-    "sandwich2-name": "Caprese Panini",
-    "sandwich2-desc": "Panini με μοτσαρέλα, ντομάτα και βασιλικό",
-    "sandwich3-name": "BLT Sandwich",
-    "sandwich3-desc": "Μπέικον, μαρούλι, ντομάτα σε ψωμί ολικής",
+  // Sandwiches items
+  "sandwiches-1-name": "Chicken Tortilla Wrap",
+  "sandwiches-1-desc": "With turkey, gouda, tomato & mustard sauce",
+  "sandwiches-2-name": "Smoked Chicken Sandwich",
+  "sandwiches-2-desc": "With smoked turkey, gouda, tomato, lettuce & mustard sauce",
+  "sandwiches-3-name": "Chicken Sandwich",
+  "sandwiches-3-desc": "With chicken, gouda, tomato, lettuce & mustard sauce",
 
-    // Sfolies items
-    "sfolia1-name": "Σφολιάτα Τυρί",
-    "sfolia1-desc": "Τραγανή σφολιάτα με κρεμώδες τυρί",
-    "sfolia2-name": "Σφολιάτα Αμύγδαλο",
-    "sfolia2-desc": "Σφολιάτα με κρέμα αμυγδάλου και ζάχαρη άχνη",
-    "sfolia3-name": "Κρουασάν Βούτυρο",
-    "sfolia3-desc": "Φρέσκο κρουασάν με ανάλατο βούτυρο",
+  // Pastries items
+  "sfolies-1-name": "Cheese Pie",
+  "sfolies-1-desc": "Say cheese! Smile, a delicious cheese pie comes to your door. Order the most delicious taste/snack of the day",
+  "sfolies-2-name": "Cheese Pie (Sheet Pan)",
+  "sfolies-2-desc": "Say cheese! Smile, a delicious cheese pie comes to your door. Order the most delicious taste/snack of the day",
+  "sfolies-3-name": "Chicken Pie (Sheet Pan)",
+  "sfolies-3-desc": "With red pepper, béchamel, chicken & gouda",
+  "sfolies-4-name": "Fiery Chicken",
+  "sfolies-4-desc": "With red pepper, béchamel, chicken & gouda",
+  "sfolies-5-name": "Potato Pie",
+  "sfolies-5-desc": "Vegetarian",
 
-    // Snacks items
-    "snack1-name": "French Fries",
-    "snack1-desc": "Τραγανές τηγανιτές πατάτες με dip επιλογής",
-    "snack2-name": "Nachos με Dips",
-    "snack2-desc": "Nachos με guacamole, salsa και κρεμώδη σάλτσα",
-    "snack3-name": "Muffin Βατόμουρο",
-    "snack3-desc": "Αφράτο muffin με βατόμουρο",
+  // Snacks items
+  "snacks-1-name": "Forest Fruit Bar",
+  "snacks-1-desc": "Homemade",
+  "snacks-2-name": "Soft Cookie Vanilla with Chocolate Chips",
+  "snacks-2-desc": "Homemade",
+  "snacks-3-name": "Soft Cookie Chocolate with Chocolate Chips",
+  "snacks-3-desc": "Homemade",
+  "snacks-4-name": "Soft Cookie Lotus",
+  "snacks-4-desc": "Homemade",
 
-    // Coffee items
-    "coffee1-name": "Espresso",
-    "coffee1-desc": "Κλασικό espresso από premium κόκκους",
-    "coffee2-name": "Freddo Cappuccino",
-    "coffee2-desc": "Παγωμένο cappuccino με αφρόγαλα",
-    "coffee3-name": "Καφέ Φίλτρου",
-    "coffee3-desc": "Αρωματικός καφές φίλτρου από single origin κόκκους",
+  // Coffees items
+  "coffees-1-name": "Espresso",
+  "coffees-1-desc": "A strong & rich coffee full of intensity & aroma",
+  "coffees-2-name": "Espresso Macchiato",
+  "coffees-2-desc": "Macchiato in Italian means 'marked' and this espresso with a little milk will mark you!",
+  "coffees-3-name": "Freddo Espresso",
+  "coffees-3-desc": "The intensity of espresso in a cool, velvety version, ideal to energize you",
+  "coffees-4-name": "Cappuccino",
+  "coffees-4-desc": "A strong espresso with rich, velvety foam milk, in a classic combination of taste & texture",
+  "coffees-5-name": "Cappuccino Latte",
+  "coffees-5-desc": "A coffee with a rich inner world since it hides the milk inside and inside!",
+  "coffees-6-name": "Freddo Cappuccino",
+  "coffees-6-desc": "Iced espresso with cold foam milk. The European version of cold coffee",
+  "coffees-7-name": "Freddo Cappuccino Latte",
+  "coffees-7-desc": "Never too late for a latte. Iced and full of taste every season",
+  "coffees-8-name": "Flat White",
+  "coffees-8-desc": "Nothing is flat. Double dose of espresso with foam milk",
+  "coffees-9-name": "Instant Coffee (Nes)",
+  "coffees-9-desc": "Say yes to a Nes! This instant coffee will warm you and its taste will accompany you",
+  "coffees-10-name": "Frappe",
+  "coffees-10-desc": "The classic Greek instant coffee, ideal to energize you anytime",
+  "coffees-11-name": "Filter Coffee",
+  "coffees-11-desc": "Filter coffee for enjoyment! Order your favorite anytime of the day",
+  "coffees-12-name": "Greek Coffee",
+  "coffees-12-desc": "If you love coffee, Greek coffee definitely loves it! The coffee that is drunk anytime of the day",
+  "coffees-13-name": "Americano",
+  "coffees-13-desc": "A strong espresso with mild taste, diluted with hot water",
 
-    // Drinks items
-    "drink1-name": "Ζεστή Σοκολάτα",
-    "drink1-desc": "Κρεμώδης ζεστή σοκολάτα με γάλα",
-    "drink2-name": "Matcha Latte",
-    "drink2-desc": "Ιαπωνικό matcha με αφρόγαλα",
-    "drink3-name": "Χαμομήλι & Μέλι",
-    "drink3-desc": "Βιολογικό χαμομήλι με θυμαρίσιο μέλι",
+  // Drinks items
+  "drinks-1-name": "Hot Chocolate",
+  "drinks-1-desc": "Delightful chocolate drink, full of taste & aromas",
+  "drinks-2-name": "Hot Chocolate Bitter",
+  "drinks-2-desc": "Delightful chocolate drink, full of taste & aromas",
+  "drinks-3-name": "Fresh Orange Juice",
+  "drinks-3-desc": "They say when you drink fresh orange juice, you hear in your ears 'drink it fast, it will lose its vitamins'. Order fast, enjoy fast and get all the vitamins",
+  "drinks-4-name": "Tea",
+  "drinks-4-desc": "Relax, drink your favorite infusion and rejuvenate body and spirit",
+  "drinks-5-name": "Chamomile",
+  "drinks-5-desc": "Relax, drink your favorite infusion and rejuvenate body and spirit",
+  "drinks-6-name": "Lemonade",
+  "drinks-6-desc": "Every sip takes you to places with sun, aromas and good energy. Order and enjoy freshness and coolness in the glass!",
+  "drinks-7-name": "Peach Juice",
+  "drinks-7-desc": "Every sip takes you to places with sun, aromas and good energy. Order and enjoy freshness and coolness in the glass!",
+  "drinks-8-name": "Cherry Juice",
+  "drinks-8-desc": "When life gives you oranges, lemons, bananas, fruits in general, squeeze into juice and enjoy. Drink your juice daily for extra energy and tone",
+  "drinks-9-name": "Homemade Lemon Ice Tea",
+  "drinks-9-desc": "Homemade",
+  "drinks-10-name": "Homemade Peach Ice Tea",
+  "drinks-10-desc": "Homemade",
+  "drinks-11-name": "Apple & Pomegranate Juice",
+  "drinks-11-desc": "When life gives you oranges, lemons, bananas, fruits in general, squeeze into juice and enjoy. Drink your juice daily for extra energy and tone",
+  "drinks-12-name": "8 Fruit Juice",
+  "drinks-12-desc": "When life gives you oranges, lemons, bananas, fruits in general, squeeze into juice and enjoy. Drink your juice daily for extra energy and tone",
+  "drinks-13-name": "Chamomile & Honey",
+  "drinks-13-desc": "Organic chamomile with thyme honey",
 
-    // Soft drinks items
-    "soft1-name": "Φρέσκος Χυμός Πορτοκάλι",
-    "soft1-desc": "Φρεσκοστυμμένος χυμός πορτοκάλι",
-    "soft2-name": "Λεμονάδα",
-    "soft2-desc": "Σπιτική λεμονάδα με βάλσαμο",
-    "soft3-name": "Smoothie Φρούτα",
-    "soft3-desc": "Ανάμεικτα φρούτα, γιαούρτι και μέλι",
+  // Soft drinks items
+  "softdrinks-1-name": "Pepsi 330ml",
+  "softdrinks-1-desc": "Classic Pepsi cola",
+  "softdrinks-2-name": "Pepsi Twist 330ml",
+  "softdrinks-2-desc": "Pepsi with lemon twist",
+  "softdrinks-3-name": "Pepsi Max 330ml",
+  "softdrinks-3-desc": "Maximum taste, zero sugar",
+  "softdrinks-4-name": "7UP 330ml",
+  "softdrinks-4-desc": "Crisp lemon-lime soda",
+  "softdrinks-5-name": "Souroti 330ml",
+  "softdrinks-5-desc": "Greek sparkling mineral water",
+  "softdrinks-6-name": "Hell Energy Classic 250ml",
+  "softdrinks-6-desc": "Instant energy boost anytime",
+  "softdrinks-7-name": "Hell Strong Apple 250ml",
+  "softdrinks-7-desc": "Instant energy boost anytime",
+  "softdrinks-8-name": "Hell Black Cherry 250ml",
+  "softdrinks-8-desc": "The HELL Black Cherry with its special black cherry taste can create a real foamy atmosphere in your daily life! Available in a chic purple-black packaging",
+  "softdrinks-9-name": "Monster Ultra Zero 500ml",
+  "softdrinks-9-desc": "Light energy drink with zero calories and sugar",
+  "softdrinks-10-name": "Water 500ml",
+  "softdrinks-10-desc": "Pure mineral water",
+  "softdrinks-11-name": "Pepsi Max Lime 330ml",
+  "softdrinks-11-desc": "Maximum taste lime flavor, zero sugar",
+  "softdrinks-12-name": "Monster Mango Loco 500ml",
+  "softdrinks-12-desc": "Exotic mango flavor energy drink",
+  "softdrinks-13-name": "Monster Energy Green 500ml",
+  "softdrinks-13-desc": "Classic Monster Energy drink",
+  "softdrinks-14-name": "Monster Absolutely Zero 500ml",
+  "softdrinks-14-desc": "Monster Energy with zero sugar",
 
-    // About page
-    "about-page-title": "Σχετικά με εμάς",
-    "about-story-title": "Η Ιστορία μας",
-    "about-story-text": "Το Cup of Cake γεννήθηκε από την αγάπη για τον καλό καφέ και τα χειροποίητα γλυκά. Ξεκινήσαμε το 2018 με ένα μικρό μαγαζάκι στο Περιστέρι και σήμερα έχουμε γίνει ο αγαπημένος προορισμός όλων όσων αναζητούν ποιοτική γεύση και ζεστή ατμόσφαιρα.",
-    "about-mission-title": "Η Αποστολή μας",
-    "about-mission-text": "Στόχος μας είναι να προσφέρουμε μια μοναδική εμπειρία σε κάθε επίσκεψη. Χρησιμοποιούμε μόνο φρέσκα, τοπικά υλικά και αγαπάμε να πειραματιζόμαστε με νέες γεύσεις χωρίς να χάνουμε την αυθεντικότητά μας.",
-    "about-atmosphere-title": "Η Ατμόσφαιρά μας",
-    "about-atmosphere-text": "Ο χώρος μας είναι σχεδιασμένος για να νιώθετε σαν στο σπίτι σας. Ζεστά χρώματα, άνετα καθίσματα και μουσική που σας χαλαρώνει – όλα εκεί για να κάνουν την επίσκεψή σας αξέχαστη.",
-    "about-values-title": "Οι Αξίες μας",
-    "about-val1": "Ποιότητα σε κάθε λεπτομέρεια",
-    "about-val2": "Ζεστή εξυπηρέτηση",
-    "about-val3": "Τοπικά & φρέσκα υλικά",
-    "about-val4": "Βιώσιμες πρακτικές",
+  // About page
+  "about-page-title": "About Us",
+  "about-story-title": "Our Story",
+  "about-story-text": "Cup of Cake was born from a love of good coffee and handmade sweets. We started in 2018 with a small shop in Peristeri and today we have become the favourite destination for all those seeking quality taste and warm atmosphere.",
+  "about-mission-title": "Our Mission",
+  "about-mission-text": "Our goal is to provide a unique experience with every visit. We use only fresh, local ingredients and love to experiment with new flavours without losing our authenticity.",
+  "about-atmosphere-title": "Our Atmosphere",
+  "about-atmosphere-text": "Our space is designed to make you feel at home. Warm colours, comfortable seating and relaxing music - all there to make your visit unforgettable.",
+  "about-values-title": "Our Values",
+  "about-val1": "Quality in every detail",
+  "about-val2": "Warm service",
+  "about-val3": "Local & fresh ingredients",
+  "about-val4": "Sustainable practices",
 
-    // 404 page
-    "404-title": "Ωχ! Η σελίδα δεν βρέθηκε",
-    "404-desc": "Φαίνεται ότι χάσατε τον δρόμο σας. Αυτή η σελίδα δεν υπάρχει.",
-    "404-btn": "Επιστροφή στην Αρχική",
-  },
+  // 404 page
+  "404-title": "Oops! Page not found",
+  "404-desc": "It looks like you've lost your way. This page doesn't exist.",
+  "404-btn": "Back to Home",
 
-  en: {
-    // Navigation
-    "nav-home": "Home",
-    "nav-menu": "Menu",
-    "nav-about": "About Us",
-    "nav-lang-el": "Ελληνικά",
-    "nav-lang-en": "English",
-
-    // Index – Hero / Carousel
-    "slide1-title": "Fresh Coffee",
-    "slide1-desc": "Aromatic coffee from selected beans",
-    "slide2-title": "Chocolate Waffles",
-    "slide2-desc": "Crispy waffles with hot chocolate and vanilla ice cream",
-    "slide3-title": "Seasonal Drinks",
-    "slide3-desc": "Hot and cold beverages for every season",
-    "slide4-title": "Sweets & Pastry",
-    "slide4-desc": "Homemade sweets made with love",
-    "slide5-title": "Brunch Delights",
-    "slide5-desc": "The perfect brunch to start your day",
-    "carousel-btn-order": "Order Now",
-
-    // Index – Intro section
-    "intro-title": "Welcome to Cup of Cake",
-    "intro-text": "At Cup of Cake we believe every moment deserves a sweet reward. From the morning coffee to the evening dessert, we offer you the best taste experience in Athens.",
-
-    // Index – Featured section
-    "featured-title": "Our Favourites",
-    "feat1-name": "Freddo Espresso",
-    "feat1-desc": "Iced coffee for summer days",
-    "feat2-name": "Nutella Waffle",
-    "feat2-desc": "Crispy waffle with Nutella and banana",
-    "feat3-name": "Raspberry Cheesecake",
-    "feat3-desc": "Creamy cheesecake with raspberry sauce",
-    "feat4-name": "Maple Pancakes",
-    "feat4-desc": "Fluffy pancakes with maple syrup",
-    "view-menu-btn": "View Our Menu",
-
-    // Footer
-    "footer-hours-title": "Opening Hours",
-    "footer-hours-weekdays": "Monday – Friday: 07:00-20:00",
-    "footer-hours-saturday": "Saturday: 08:00-20:00",
-    "footer-hours-sunday": "Sunday: 09:30-17:00",
-    "footer-address": "Morogianni 83 & Irakleous, Peristeri 12133, Athens",
-    "footer-phone": "Tel.: +30  210 574 7222",
-    "footer-copy": "© 2025 Cup of Cake. All rights reserved.",
-    "footer-map-title": "Find Us Here",
-
-    // Menu page
-    "menu-page-title": "Our Menu",
-    "menu-page-subtitle": "Discover our flavours",
-
-    // Menu categories
-    "cat-brunch": "Brunch",
-    "cat-waffles": "Waffles",
-    "cat-pancakes": "Sweet Pancakes",
-    "cat-sweets": "Sweets",
-    "cat-sandwiches": "Sandwiches",
-    "cat-sfolies": "Pastries",
-    "cat-snacks": "Snacks",
-    "cat-coffees": "Coffees",
-    "cat-drinks": "Beverages",
-    "cat-soft": "Soft Drinks",
-
-    // Brunch items
-    "brunch1-name": "Avocado Toast",
-    "brunch1-desc": "Toast with avocado, poached egg and cherry tomatoes",
-    "brunch2-name": "English Breakfast",
-    "brunch2-desc": "Eggs, bacon, sausage, beans, toast",
-    "brunch3-name": "Granola Bowl",
-    "brunch3-desc": "Granola with yoghurt, honey and fresh fruit",
-
-    // Waffle items
-    "waffle1-name": "Classic Waffle",
-    "waffle1-desc": "Waffle with butter, honey and icing sugar",
-    "waffle2-name": "Nutella & Banana Waffle",
-    "waffle2-desc": "Waffle with Nutella, banana and crushed hazelnuts",
-    "waffle3-name": "Strawberry Waffle",
-    "waffle3-desc": "Waffle with whipped cream and strawberries",
-
-    // Pancakes items
-    "pancake1-name": "Maple Syrup Pancakes",
-    "pancake1-desc": "Fluffy pancakes with maple syrup and butter",
-    "pancake2-name": "Nutella Pancakes",
-    "pancake2-desc": "Pancakes with Nutella and crushed Oreo",
-    "pancake3-name": "Fruit Pancakes",
-    "pancake3-desc": "Pancakes with mixed fresh fruit",
-
-    // Sweets items
-    "sweet1-name": "New York Cheesecake",
-    "sweet1-desc": "Classic cheesecake on a Graham cracker base",
-    "sweet2-name": "Chocolate Brownie",
-    "sweet2-desc": "Warm brownie with vanilla ice cream",
-    "sweet3-name": "Tiramisu",
-    "sweet3-desc": "Italian tiramisu with mascarpone and coffee",
-
-    // Sandwiches items
-    "sandwich1-name": "Club Sandwich",
-    "sandwich1-desc": "Triple-decker sandwich with chicken, bacon and vegetables",
-    "sandwich2-name": "Caprese Panini",
-    "sandwich2-desc": "Panini with mozzarella, tomato and basil",
-    "sandwich3-name": "BLT Sandwich",
-    "sandwich3-desc": "Bacon, lettuce, tomato on wholegrain bread",
-
-    // Sfolies items
-    "sfolia1-name": "Cheese Pastry",
-    "sfolia1-desc": "Crispy pastry with creamy cheese filling",
-    "sfolia2-name": "Almond Pastry",
-    "sfolia2-desc": "Pastry with almond cream and icing sugar",
-    "sfolia3-name": "Butter Croissant",
-    "sfolia3-desc": "Fresh croissant with unsalted butter",
-
-    // Snacks items
-    "snack1-name": "French Fries",
-    "snack1-desc": "Crispy fries with your choice of dip",
-    "snack2-name": "Nachos & Dips",
-    "snack2-desc": "Nachos with guacamole, salsa and creamy sauce",
-    "snack3-name": "Blueberry Muffin",
-    "snack3-desc": "Fluffy muffin with blueberry",
-
-    // Coffee items
-    "coffee1-name": "Espresso",
-    "coffee1-desc": "Classic espresso from premium beans",
-    "coffee2-name": "Freddo Cappuccino",
-    "coffee2-desc": "Iced cappuccino with milk foam",
-    "coffee3-name": "Filter Coffee",
-    "coffee3-desc": "Aromatic filter coffee from single-origin beans",
-
-    // Drinks items
-    "drink1-name": "Hot Chocolate",
-    "drink1-desc": "Creamy hot chocolate with milk",
-    "drink2-name": "Matcha Latte",
-    "drink2-desc": "Japanese matcha with milk foam",
-    "drink3-name": "Chamomile & Honey",
-    "drink3-desc": "Organic chamomile with thyme honey",
-
-    // Soft drinks items
-    "soft1-name": "Fresh Orange Juice",
-    "soft1-desc": "Freshly squeezed orange juice",
-    "soft2-name": "Lemonade",
-    "soft2-desc": "Homemade lemonade with lemon balm",
-    "soft3-name": "Fruit Smoothie",
-    "soft3-desc": "Mixed fruits, yoghurt and honey",
-
-    // About page
-    "about-page-title": "About Us",
-    "about-story-title": "Our Story",
-    "about-story-text": "Cup of Cake was born from a love of good coffee and handmade sweets. We started in 2018 with a small shop in Peristeri and today we have become the favourite destination for everyone seeking quality taste and a warm atmosphere.",
-    "about-mission-title": "Our Mission",
-    "about-mission-text": "Our goal is to offer a unique experience on every visit. We use only fresh, local ingredients and love to experiment with new flavours without losing our authenticity.",
-    "about-atmosphere-title": "Our Atmosphere",
-    "about-atmosphere-text": "Our space is designed to make you feel at home. Warm colours, comfortable seating and relaxing music – all there to make your visit unforgettable.",
-    "about-values-title": "Our Values",
-    "about-val1": "Quality in every detail",
-    "about-val2": "Warm service",
-    "about-val3": "Local & fresh ingredients",
-    "about-val4": "Sustainable practices",
-
-    // 404 page
-    "404-title": "Oops! Page Not Found",
-    "404-desc": "Looks like you've lost your way. This page doesn't exist.",
-    "404-btn": "Back to Home",
-  },
 };
 
 // ── Language management ──────────────────────────────────────────────────────
+// Greek is the default, stored in HTML
+// English translations are applied only when user switches language
+
 let currentLang = localStorage.getItem("coc-lang") || "el";
 
-function applyTranslations(lang) {
-  currentLang = lang;
-  localStorage.setItem("coc-lang", lang);
-  document.documentElement.lang = lang;
+// Store the original Greek text when page first loads
+const greekOriginals = {};
 
-  const t = translations[lang];
+// Function to populate Greek originals from the HTML
+function storeGreekOriginals() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (t[key] !== undefined) {
-      el.textContent = t[key];
+    if (!greekOriginals[key]) {
+      greekOriginals[key] = el.textContent;
+    }
+  });
+}
+
+function switchToEnglish() {
+  currentLang = "en";
+  localStorage.setItem("coc-lang", "en");
+  document.documentElement.lang = "en";
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    // Apply English translation
+    if (translations[key] !== undefined) {
+      el.textContent = translations[key];
     }
   });
 
   // Update active state on lang buttons
   document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.classList.toggle("lang-active", btn.dataset.lang === lang);
+    btn.classList.toggle("lang-active", btn.dataset.lang === "en");
+  });
+}
+
+function switchToGreek() {
+  currentLang = "el";
+  localStorage.setItem("coc-lang", "el");
+  document.documentElement.lang = "el";
+
+  // Restore original Greek text
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (greekOriginals[key]) {
+      el.textContent = greekOriginals[key];
+    }
+  });
+
+  // Update active state on lang buttons
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("lang-active", btn.dataset.lang === "el");
   });
 }
 
 function initI18n() {
-  applyTranslations(currentLang);
+  // First, always store the original Greek text from HTML
+  storeGreekOriginals();
 
+  // Then apply the appropriate language
+  if (currentLang === "en") {
+    switchToEnglish();
+  } else {
+    // Greek is already there, just update button states
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.classList.toggle("lang-active", btn.dataset.lang === "el");
+    });
+  }
+
+  // Set up language switch buttons
   document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.addEventListener("click", () => applyTranslations(btn.dataset.lang));
+    btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      if (lang === "en") {
+        switchToEnglish();
+      } else {
+        switchToGreek();
+      }
+    });
   });
 }
 
-document.addEventListener("DOMContentLoaded", initI18n);
+// Run immediately if DOM is already loaded (script is at bottom of page)
+// Otherwise wait for DOMContentLoaded event
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initI18n);
+} else {
+  initI18n();
+}
