@@ -22,6 +22,19 @@ section:not(#carousel):not(.menu-hero):not(.about-hero):not(#map-section):not(.m
   transform: translateY(0);
 }
 
+/* ── Parallax Wrapper for Content Over Hero ───── */
+#parallax-wrapper {
+  position: relative;
+  z-index: 2;
+  background: white;
+  will-change: transform;
+}
+
+/* ── Menu Category Buttons Container ───────────── */
+#parallax-wrapper > div[class*="py-4"][class*="px-4"] {
+  background: linear-gradient(to bottom, white, rgb(249, 250, 251));
+}
+
 /* ── Menu Category Buttons ───────────────────── */
 .menu-category-btn {
   display: inline-flex;
@@ -72,6 +85,12 @@ main > section.menu-section.active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Main content */
+main {
+  position: relative;
+  background: white;
 }
 
 body {
@@ -382,12 +401,40 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
   transition: transform 0.25s, box-shadow 0.25s;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .menu-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(111,45,168,0.16);
+}
+
+.menu-card .item-image {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(111,45,168,0.15) 0%, rgba(111,45,168,0.05) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: rgba(111,45,168,0.4);
+  overflow: hidden;
+}
+
+.menu-card .item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-card .item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-card .item-name {
@@ -412,27 +459,34 @@ body {
 
 /* ── Hero banners ──────────────────────────────── */
 .menu-hero, .about-hero {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.2) 100%), url('cover.avif');
+  background-image: linear-gradient(to top, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.32) 40%, rgba(0,0,0,0.08) 100%), url('cover.avif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 520px;
+  height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--text-light);
+  position: relative;
+  z-index: 1;
 }
 
-@media (max-width: 767px) { .menu-hero, .about-hero { height: 340px; } }
-
+@media (max-width: 767px) { 
+  .menu-hero, .about-hero { 
+    height: 100vh;
+  } 
+} 
+/* Make minimum height of hero be 520 px */
 .menu-hero h1, .about-hero h1 {
-  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .menu-hero p, .about-hero p {
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 3px 10px rgba(0,0,0,0.75);
 }
 
 /* ── Info cards (about_us.html) ────────────────── */
@@ -509,7 +563,11 @@ body {
 }
 
 /* ── Map section ───────────────────────────────── */
-#map-section { background: var(--pale-1); }
+#map-section { 
+  background: var(--pale-1);
+  position: relative;
+  z-index: 3;
+}
 
 .map-container iframe {
   border-radius: 12px;
