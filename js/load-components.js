@@ -2,7 +2,7 @@
 async function loadNavbarFooter() {
   try {
     // Load navbar
-    const navbarResponse = await fetch('js/navbar.html');
+    const navbarResponse = await fetch('elements/navbar.html');
     const navbarHTML = await navbarResponse.text();
     const navbarContainer = document.createElement('div');
     navbarContainer.innerHTML = navbarHTML;
@@ -19,17 +19,23 @@ async function loadNavbarFooter() {
     }
 
     // Load map
-    const mapResponse = await fetch('js/map.html');
+    const mapResponse = await fetch('elements/map.html');
     const mapHTML = await mapResponse.text();
     const mapContainer = document.createElement('div');
     mapContainer.innerHTML = mapHTML;
     
-    // Find the main element or body to insert map before footer
-    const mainElement = document.querySelector('main') || document.body;
-    if (mainElement.nextElementSibling) {
-      mainElement.parentNode.insertBefore(mapContainer.firstElementChild, mainElement.nextElementSibling);
+    // Insert map inside parallax wrapper
+    const parallaxWrapper = document.querySelector('#parallax-wrapper');
+    if (parallaxWrapper) {
+      parallaxWrapper.appendChild(mapContainer.firstElementChild);
     } else {
-      document.body.insertBefore(mapContainer.firstElementChild, document.body.lastChild);
+      // Fallback if parallax wrapper doesn't exist
+      const mainElement = document.querySelector('main') || document.body;
+      if (mainElement.nextElementSibling) {
+        mainElement.parentNode.insertBefore(mapContainer.firstElementChild, mainElement.nextElementSibling);
+      } else {
+        document.body.insertBefore(mapContainer.firstElementChild, document.body.lastChild);
+      }
     }
 
     // Store Greek originals for newly loaded map elements
@@ -38,7 +44,7 @@ async function loadNavbarFooter() {
     }
 
     // Load footer
-    const footerResponse = await fetch('js/footer.html');
+    const footerResponse = await fetch('elements/footer.html');
     const footerHTML = await footerResponse.text();
     const footerContainer = document.createElement('div');
     footerContainer.innerHTML = footerHTML;
