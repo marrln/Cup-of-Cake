@@ -13,6 +13,32 @@ async function loadNavbarFooter() {
       storeGreekOriginals();
     }
 
+    // Apply current language to navbar with fade animation if English is selected
+    if (typeof currentLang !== 'undefined' && currentLang === 'en') {
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        el.classList.add("translating");
+      });
+      
+      setTimeout(() => {
+        if (typeof translations !== 'undefined') {
+          document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            if (translations[key] !== undefined) {
+              el.textContent = translations[key];
+            }
+            el.classList.remove("translating");
+          });
+        }
+      }, 200);
+    }
+
+    // Update language button states to match current language
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      if (typeof currentLang !== 'undefined') {
+        btn.classList.toggle("lang-active", btn.dataset.lang === currentLang);
+      }
+    });
+
     // Setup language button listeners now that navbar is in the DOM
     if (typeof setupLangButtonListeners === 'function') {
       setupLangButtonListeners();
