@@ -512,20 +512,6 @@ p {
   opacity: 0.92;
 }
 
-/* ── Category header badge (menu.html) ───────── */
-.cat-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1.2rem;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-light);
-  background: var(--primary-07);
-  margin-bottom: 1.2rem;
-}
-
 /* ── Menu item card (menu.html) ────────────────── */
 .menu-card {
   background: #fff;
