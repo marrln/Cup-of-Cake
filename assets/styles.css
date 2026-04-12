@@ -79,6 +79,20 @@ section:not(#carousel):not(.menu-hero):not(.about-hero):not(#map-section):not(.m
   border-color: var(--primary-07);
 }
 
+@media (max-width: 768px) {
+  .menu-category-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-category-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}
+
 /* Hide all menu sections by default */
 main > section.menu-section {
   display: none;

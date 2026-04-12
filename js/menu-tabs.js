@@ -1,5 +1,5 @@
 // Menu Category Tab System
-document.addEventListener('DOMContentLoaded', () => {
+function initMenuTabs() {
   const categoryButtons = document.querySelectorAll('.menu-category-btn');
   const menuSections = document.querySelectorAll('main > section.menu-section');
 
@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
+}
