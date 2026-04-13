@@ -96,7 +96,7 @@ async function loadAndRenderMenu() {
 
             // Create grid
             const grid = document.createElement('div');
-            grid.className = 'grid grid-cols-3 gap-8';
+            grid.className = 'grid gap-8';
 
             // Append grid to container, container to wrapper, wrapper to section
             container.appendChild(grid);
