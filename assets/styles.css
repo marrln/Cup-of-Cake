@@ -720,8 +720,8 @@ footer {
   }
 }
 
-footer a { color: var(--white); transition: color 0.2s; }
-footer a:hover { color: #fff; }
+footer a { color: var(--white); transition: color 0.2s, text-decoration 0.2s; }
+footer a:hover {text-decoration: underline; }
 footer p { text-align: left; }
 
 .social-icon {
